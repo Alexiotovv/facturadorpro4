@@ -23,7 +23,7 @@ WORKDIR /var/www
 COPY . .
 
 # Instalar dependencias de Composer
-RUN composer update --no-dev --optimize-autoloader
+RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/bin --filename=composer
 
 # Copiar el archivo de configuración de PHP
 COPY .docker/php/php.ini /usr/local/etc/php/php.ini
