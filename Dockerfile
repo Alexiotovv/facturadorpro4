@@ -1,5 +1,5 @@
 # Usar la imagen de PHP 7.1 con Apache
-FROM php:8.1-apache
+FROM php:8.1-fpm
 
 
 # Instalar dependencias del sistema
